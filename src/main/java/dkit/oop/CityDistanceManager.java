@@ -35,8 +35,22 @@ public class CityDistanceManager {
 
     // Q4.2
     public String findClosestCityTo(String searchCity) {
-        // write code here
-        return "unknown";
+        String resCity = null;
+        int rowIndex = 0;
+        int colIndex = 0;
+        int distance = 10000000;
+
+        for (int i = 0; i <= this.cities.length-1; i++) {
+            if (searchCity.equals(this.cities[i]))
+                rowIndex = i;
+        }
+
+        for (int i = 0; i <= this.distances[rowIndex].length-1; i++) {
+            if (this.distances[rowIndex][i] > distance && this.distances[rowIndex][i] < 0)
+                distance = this.distances[rowIndex][i];
+        }
+
+        return this.cities[rowIndex];
     }
 
     /////////////// no changes required below this comment ///////////////
