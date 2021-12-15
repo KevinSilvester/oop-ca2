@@ -61,6 +61,10 @@ public class App
 
         System.out.println(res1 + " " + res2 + " " + res3);
 
+        System.out.println("\nFind Airplane by Passenger Name");
+        Airplane a = mgr.findAirplaneByPassengerName("John Wick");
+        Airplane b = mgr.findAirplaneByPassengerName("JarJar Binks");
+        System.out.println(a + "\n" + b);
 
         //Question 4
         // Uncomment all the code below and implement the two methods

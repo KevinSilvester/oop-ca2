@@ -15,6 +15,8 @@ public class PassengerAirplane extends Airplane  {
         this.passengerList = new ArrayList<>();
     }
 
+    public ArrayList<String> getPassengerList() { return this.passengerList; }
+
     public void addPassenger(String name) {
         if (this.passengerList.size() <= this.MAX_NUM_PASSENGERS)
             this.passengerList.add(name);

@@ -65,11 +65,31 @@ public class AirplaneManager {
 
 
     // write containsAirplane( Airplane plane )
+    public boolean containsAirplane(Airplane plane) {
+        for (Airplane a: this.airplaneList) {
+            if (a.equals(plane)) {
+                return true;
+            }
+        }
+        return false;
+    }
 
 
     // write findAirplaneByPassengerName( passengerName )
+    public Airplane findAirplaneByPassengerName(String passengerName) {
+        for (Airplane a: this.airplaneList)
+            if (a instanceof PassengerAirplane)
+                if (((PassengerAirplane) a).getPassengerList().contains(passengerName))
+                    return a;
+
+        return null;
+    }
 
     // write displayAllAirplanesInOrderOfType( argument )
+    // not sure what arguments should be passed in
+    public void displayAllAirplanesInOrderOfType() {
+
+    }
 
 
 } // end of AirplaneManager
