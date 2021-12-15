@@ -70,17 +70,17 @@ public class App
         // Uncomment all the code below and implement the two methods
         // in the CityDistanceManager class.
 
-//        CityDistanceManager cityDistanceManager = new CityDistanceManager();
-//        cityDistanceManager.printCitiesData();
+        CityDistanceManager cityDistanceManager = new CityDistanceManager();
+        cityDistanceManager.printCitiesData();
 //
-//        Scanner keyboard = new Scanner(System.in);
-//        System.out.print("\nPlease enter first city name:");
-//        String city1 = keyboard.nextLine();
-//        System.out.print("Please enter second city name:");
-//        String city2 = keyboard.nextLine();
-//
-//        int distance = cityDistanceManager.findDistanceBetween(city1, city2);
-//        System.out.println("Distance between " + city1 + " and " + city2 + " = " + distance);
+        Scanner keyboard = new Scanner(System.in);
+        System.out.print("\nPlease enter first city name:");
+        String city1 = keyboard.nextLine();
+        System.out.print("Please enter second city name:");
+        String city2 = keyboard.nextLine();
+
+        int distance = cityDistanceManager.findDistanceBetween(city1, city2);
+        System.out.println("Distance between " + city1 + " and " + city2 + " = " + distance);
 //
 //        System.out.print("\nEnter base city name:");
 //        String baseCity = keyboard.nextLine();
