@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="oop-ca2" />
+        <module name="CA2-Aircraft" />
+        <module name="OOP-CA2-Aircraft-2021-Solution" />
+        <module name="oop-ca2-Dec21-AirplaneManager-STARTER" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
